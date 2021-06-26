@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr GIG Previewer</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <button id="_uploadImages" class="btn btn-primary"><i class="fas fa-upload"></i>Upload Images</button>
+        <div class="container">
+            <form id="_imagesForm" action="" method="post">
+                <input id="_imagesInput" accept="image/*" type="file" style="display:none" multiple>
+            </form>
+            <div id="_displayImages">
+                <div class="slider">
+                    <ul id="frames" class="frames"></ul>
+                    <!-- <div class="nav"></div> -->
+
+                    <div class="seller-info">
+                        <div class="seller-img">
+                        <img src="img/john-doe.jpg" alt="Seller Profile Image" class="img">
+                        </div>
+                        <div class="seller-identity">
+                        <div class="seller-name">john_doe</div>
+                        <div class="seller-level">Level 2 Seller</div>
+                        </div>
+                    </div>
+                    <div class="title-text">
+                    <h3 class="text">I will design a minimalist logo for your business</h3>
+                    </div>
+                    <div class="footer-space"></div>
+                    <div class="footer-wrapper">
+                    <div class="bar"><i class="fas fa-bars"></i></div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="pricing">
+                        <div class="starting-at"> STARTING AT</div>
+                        <div class="dollar" contenteditable="true">$150</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="feedback">*Title Required!</h4>
+        <form id="message-form">
+            <input type="text" placeholder="Enter Title Here" name="" id="message" class="box">
+            <input type="submit" name="" id="submitBtn" class="button">
+        </form>
+    
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
